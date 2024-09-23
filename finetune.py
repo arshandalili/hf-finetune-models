@@ -28,9 +28,7 @@ print(
 )
 
 
-model = RobertaForSequenceClassification.from_pretrained(
-    args.model, local_files_only=True
-)
+model = RobertaForSequenceClassification.from_pretrained(args.model)
 tokenizer = RobertaTokenizer.from_pretrained(args.model)
 
 print(f"Name/path to the model: {model.name_or_path}")
